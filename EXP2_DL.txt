@@ -16,10 +16,12 @@ ls
 cd tanmay/
 ls -->readme file will be there
 touch hello.py
+ls
 gedit hello.py
 git status
 git add hello.py
 git commit -m "hi buddy"--->saves your recent edits to hello.py into git with a message hi buddy
 git status
 git push origin main
+
 git log
