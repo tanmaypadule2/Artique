@@ -8,8 +8,11 @@ step6:on the top right selium will be there s logo
 step7:click on new project 
 step8:named the project
 step9:now give the name to test case
-step10:add base url as https://www.google.com/
+step10:add base url as https://www.google.com/  and start recording
 step11:search anything on google
+Type "Selenium DevOps Tutorials" in the Google search box.
+Hit enter to get the search results.
+Click on the link "How to Use DevOps in Selenium Testing" provided under the URL  https://www.softwaretestinghelp.com/devops-in-selenium-testing/
+It will redirect you to https://www.softwaretestinghelp.com/devops-in-selenium-testing/ tutorial web page. Meanwhile, you will get the notifications of the actions performed by the IDE at the extreme right corner of your web browser.
 step12:stop recording
 step13:we can reply by using play button
-
