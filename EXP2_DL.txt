@@ -1,0 +1,25 @@
+exp2:Installation of Git and work on local and remote git repo
+Terminal:
+sudo su
+git --version
+git config --global user.name "tanmaypadule2"
+git config --global user.email "23104156@apsit.edu.in"
+git config --list
+GitHub:
+create new repo ,give name , keep public, add readme file
+Terminal:
+mkdir tanmay
+cd tanmay
+git init
+git clone https:...
+ls
+cd tanmay/
+ls -->readme file will be there
+touch hello.py
+gedit hello.py
+git status
+git add hello.py
+git commit -m "hi buddy"--->saves your recent edits to hello.py into git with a message hi buddy
+git status
+git push origin main
+git log

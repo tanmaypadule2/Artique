@@ -1,0 +1,26 @@
+EXP3--> perform version control system using git
+su root
+cd tanmay
+git config --global user.name "tanmaypadule2"
+git config --global user.email "23104156@apsit.edu.in"
+git config --list
+sudo git clone https://github.com...
+ls
+cd tanmay
+git branch feature
+git branch
+git checkout feature
+echo "this test was added while in the feature branch" >>hello.py
+cat hello.py
+git status
+git add hello.py
+git status
+git commit -m "added a line in feature branch"
+git log
+git checkout main
+git merge feature
+cat  hello.py
+git remote set-url origin https....(generate token and paste here)
+git push -u origin main
+git branch
+git branch -d feature
