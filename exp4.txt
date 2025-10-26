@@ -1,0 +1,369 @@
+exp4: install and config Jenkins and maven
+apt-get update
+apt-get install openjdk-11-jdk
+java -version
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+ /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+ https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+ /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+jenkins --version
+sudo systemctl start jenkins.service
+sudo ufw status
+sudo ufw allow 8080
+sudo ufw enable
+http://localhost:8080 or http://127.0.0.1:8080
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+create folder jenkins_lab
+gedit simple.java
+javac simple.java
+java simple
+git init
+git status
+git config --global user.name "<git username>"
+git config --global user.email "<email that you use for github>"
+git config --list
+git commit -m "Added helloworld java program"
+git remote add origin https://github.com/Jaypant234
+git push -u origin master or main
+ goto the 
+localhost:8080
+or 
+http://127.0.0.1:8080
+
+step1: click on new item
+step2: click on freestyle project
+step3: click on okay
+step4: now scroll to source management click on git 
+step5: paste your git repository url in that
+step6: scroll to bulid steps and add
+javac hello.java
+java hello
+step7:click on save
+step8:now click on build
+step9:now click console output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
