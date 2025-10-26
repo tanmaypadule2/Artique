@@ -1,0 +1,15 @@
+step1:open firefox and paste this link
+https://addons.mozilla.org/en-us/firefox/addon/selenium-ide/
+step2:download for firefox
+step3:click on add on firefox
+step4:allow the permission
+step5:restart firefox
+step6:on the top right selium will be there s logo
+step7:click on new project 
+step8:named the project
+step9:now give the name to test case
+step10:add base url as https://www.google.com/
+step11:search anything on google
+step12:stop recording
+step13:we can reply by using play button
+
