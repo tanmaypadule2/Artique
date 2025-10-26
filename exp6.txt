@@ -1,0 +1,34 @@
+Step1:go to the manage jenkins
+Step2:click on the nodes
+step3:click on the new node
+step4:name the node and select permanent node
+step5:mkdir jenkins
+step6:cd jenkins
+step7:type pwd on terminal and whatever output you get just paste on (in jenkins :remote root directory)
+step8:type in terminal = find / -type f -name java
+this will gave 10 line output find the directory root like this
+"/usr/lib/jvm/java-17-openjdk-amd64/bin/java'
+step9:under node properties
+select enviorment variable
+give any name 
+in the value paste that directory address
+step10:save
+step11:goto manage jenkins
+step12: goto security
+step13:agent 
+tcp port for inbound agent
+step14:make it fixed and add 50000
+step15:goto the terminal and  type sudo ufw allow 50000/tcp
+step16:goto our agent
+curl -sO http://127.0.0.1:8080/jnlpJars/agent.jar;java -jar agent.jar -url http://127.0.0.1:8080/ -secret 20f3324c28010664ff5a1a77731f104f3ce8f3dd2fb3b34c61966f1ec2165100 -name pc2 -webSocket -workDir "/home/harshal3467/jenkins"
+this type of command is present just type one by one
+step17:connection established
+step18:now create new item in jenkins
+step19:give any name ,choose freestyle project
+step20:then after description choose
+restrict where this project can be run
+then choose our agent
+step21:in build steps choose execute sheel
+step22:add echo"anything you will to write"
+step23;save it and press on build 
+step24:show the console output
