@@ -1,0 +1,59 @@
+create two instance(EC2)
+one master and slave
+key pair use same for slave
+connect both
+
+STEP 1
+sudo su(both M AND S)
+apt update -y((both M AND S)
+
+STEP2(ON MASTER ONLY)
+
+apt-add-repository ppa:ansible/ansible
+apt update -y
+apt-get install ansible -y
+ansible --version
+
+
+STEP 3(ON MASTER ONLY)
+
+nano /etc/ansible/hosts
+Add ip address of ansible slave machine below EX 2
+and write client_1 above it in square brackets
+save 
+
+
+STEP 4(ON MASTER ONLY)
+
+ssh-keygen -t rsa
+cd /root/ .shh/
+ls
+cat id_rsa.pub
+
+will copy the key in ansible slave
+
+
+Step5(on slave only)
+
+cd /root/ .shh/
+ls
+nano authorized_keys
+
+here issue is there
+
+save
+
+
+nano /etc/ssh/sshd_config
+
+write PermitRootLogin yes below prohibit password
+
+save it
+
+STEP 6(ON MASTER ONLY)
+
+ansible -m ping all
+
+ansible client_1 -m setup
+
+
