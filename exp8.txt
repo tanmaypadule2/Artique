@@ -15,4 +15,9 @@ sudo  docker run --name tanmay -e MYSQL_USER=user -e MYSQL_PASSWORD=root -e MYSQ
 sudo docker ps
 sudo docker exec -it (container_id of MySQL) bash
 run some commands in MySQL ---> show databases;
+mysql -u root -p
+sudo docker stop
+sudo docker kill
+sudo docker rm
+
 
